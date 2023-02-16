@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6909329624821207225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6909329624821207223}
+  - component: {fileID: 6909329624821207222}
+  m_Layer: 0
+  m_Name: MercuryQuizManager-Eng
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6909329624821207223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6909329624821207225}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.35586694, y: 0.6029707, z: 4.9828005}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6909329624821207222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6909329624821207225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9789ff689765f65478228891f3099254, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  QnA:
+  - Question: ' Mercury is the __ planet from the sun '
+    Answers:
+    - 1st
+    - 6th
+    - 3rd
+    - 2nd
+    CorrectAnswer: 1
+  - Question: How long is a day in Mercury?
+    Answers:
+    - 69 Earth days
+    - 59 Earth days
+    - 88 Earth days
+    - 88 Earth hours
+    CorrectAnswer: 2
+  - Question: How many moons does Mercury have?
+    Answers:
+    - 3 moons
+    - 0 moons
+    - 5 moons
+    - 2 moons
+    CorrectAnswer: 2
+  - Question: Which 2 robots have been sent to explore Mercury?
+    Answers:
+    - Sub-Mariner and Message
+    - Athena and Hermes
+    - Curiosity rover and Pioneer
+    - Mariner 10 and Messenger
+    CorrectAnswer: 4
+  - Question: What is Mercury's size compared to earth?
+    Answers:
+    - 1/2 of Earth
+    - 3/4 of Earth
+    - 1/3 of Earth
+    - 2/3 of Earth
+    CorrectAnswer: 3
+  - Question: Which roman god was Mercury named after?
+    Answers:
+    - The god of messengers
+    - The god of war
+    - The god of love
+    - The god of wisdom
+    CorrectAnswer: 1
+  - Question: In what shape does Mercury orbit around the sun?
+    Answers:
+    - Pear
+    - Oval
+    - Egg
+    - Circle
+    CorrectAnswer: 3
+  - Question: Which of these elements do NOT make up a major part of Mercury's exosphere?
+    Answers:
+    - Oxygen
+    - Sodium
+    - Hydrogen
+    - Barium
+    CorrectAnswer: 4
+  - Question: How much heavier would a person be on mercury?
+    Answers:
+    - 38% lighter
+    - 38% heavier
+    - 62% lighter
+    - 62% heavier
+    CorrectAnswer: 3
+  - Question: Which of these artists do not have a crater in Mercury named after
+      them?
+    Answers:
+    - Sebastian Bach
+    - Freddy Mercury
+    - Ludwig Van Beethoven
+    - Mark Twain
+    CorrectAnswer: 2
+  options:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  currentQuestions: 0
+  QuestionText: {fileID: 0}
+  QuizPanel: {fileID: 0}
+  GoPanel: {fileID: 0}
+  ScoreTxt: {fileID: 0}
+  score: 0

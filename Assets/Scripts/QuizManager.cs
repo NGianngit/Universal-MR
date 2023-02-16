@@ -50,9 +50,24 @@ public class QuizManager : MonoBehaviour
     private void Start()
     {
         totalQuestions = QnA.Count;
+        //GoPanel.SetActive(false);
+        //QuizPanel.SetActive(true);
+        //generateQuestions();
+    }
+
+    public void StartQuiz()
+    {
+        totalQuestions = QnA.Count;
         GoPanel.SetActive(false);
         QuizPanel.SetActive(true);
         generateQuestions();
+        currentQuestions = 0;
+        score = 0;
+    }
+
+    public void Update()
+    {
+        ScoreTxt.text = score.ToString();
     }
     public void Retry()
     {
