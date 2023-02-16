@@ -106,6 +106,7 @@ public class RotationPivot1 : MonoBehaviour
     {
         //Debug.Log("Grab");
         rotationSpeed = 0;
+        returnSpeed = 0;
     }
     public void OffPress()
     {
@@ -113,6 +114,7 @@ public class RotationPivot1 : MonoBehaviour
         isPress = true;
         rotationOn= true;
         rotationSpeed = savedRotationSpeed;
+        returnSpeed = savedReturnSpeed;
     }
 
     public void OnFocus()
