@@ -18,7 +18,7 @@ public class Astroids : MonoBehaviour
     private string seconds;
     public bool gameOver = true;
 
-    private int asteroidPoints;
+    public int asteroidPoints;
     // Start is called before the first frame update
     void Start()
     {

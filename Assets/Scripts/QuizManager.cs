@@ -6,7 +6,10 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class QuizManager : MonoBehaviour
-{   
+{
+    // call the score manager
+    public QuizScoreManager quizScoreManager;
+    public int whichQuiz;
     /// <summary>
     /// calling list from QuestionAndAnswers script
     /// </summary>
@@ -78,6 +81,9 @@ public class QuizManager : MonoBehaviour
         GoPanel.SetActive(true);
         QuizPanel.SetActive(false);
         ScoreTxt.text = score + "/" + totalQuestions;
+        AddQuizScore();
+
+        
     }
     /// <summary>
     /// remove previous qn and put the 
@@ -130,6 +136,84 @@ public class QuizManager : MonoBehaviour
             Debug.Log("Out of Quesstions");
             GameOver();
 
+        }
+    }
+
+    public void AddQuizScore()
+    {
+        if (whichQuiz == 1)
+        {
+            if (score > quizScoreManager.mercuryScore)
+            {
+                quizScoreManager.Quizscore = score;
+                quizScoreManager.AddMercuryScore();
+            }
+        }
+        if (whichQuiz == 2)
+        {
+            if (score > quizScoreManager.venusScore)
+            {
+                quizScoreManager.Quizscore = score;
+                quizScoreManager.AddVenusScore();
+            }
+        }
+        if (whichQuiz == 3)
+        {
+            if (score > quizScoreManager.earthScore)
+            {
+                quizScoreManager.Quizscore = score;
+                quizScoreManager.AddEarthScore();
+            }
+        }
+        if (whichQuiz == 4)
+        {
+            if (score > quizScoreManager.marsScore)
+            {
+                quizScoreManager.Quizscore = score;
+                quizScoreManager.AddMarsScore();
+            }
+        }
+        if (whichQuiz == 5)
+        {
+            if (score > quizScoreManager.jupiterScore)
+            {
+                quizScoreManager.Quizscore = score;
+                quizScoreManager.AddJupiterScore();
+            }
+        }
+        if (whichQuiz == 6)
+        {
+            if (score > quizScoreManager.saturnScore)
+            {
+                quizScoreManager.Quizscore = score;
+                quizScoreManager.AddSaturnScore();
+            }
+        }
+        if (whichQuiz == 7)
+        {
+            if (score > quizScoreManager.uranusScore)
+            {
+                quizScoreManager.Quizscore = score;
+                quizScoreManager.AddUranusScore();
+            }
+        }
+
+        if (whichQuiz == 8)
+        {
+            if (score > quizScoreManager.neptuneScore)
+            {
+                quizScoreManager.Quizscore = score;
+                quizScoreManager.AddNeptuneScore();
+            }
+        }
+
+        if (whichQuiz == 9)
+        {
+            if (score > quizScoreManager.solarSystemScore)
+            {
+                quizScoreManager.Quizscore = score;
+                quizScoreManager.AddSolarSystemScore();
+            }
         }
     }
 }
