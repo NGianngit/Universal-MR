@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class RotationPivot1 : MonoBehaviour
 {
+    //InfoPanel
+    public GameObject infoPanel;
     //Rotation Pivot Variable.
     public bool rotationOn;
     public float rotationSpeed;
@@ -107,6 +109,8 @@ public class RotationPivot1 : MonoBehaviour
         {
             //Debug.Log("Collider On ");
 
+            //set info panel active
+            infoPanel.gameObject.SetActive(true);
             //Stop Solar System Rotation.
             rotationSpeed= 0;
             returnSpeed = 0;
@@ -133,6 +137,9 @@ public class RotationPivot1 : MonoBehaviour
             isHover = false;
             Debug.Log("Going Small");
             transform.localScale = Vector3.Lerp(scaleResize, scaleNum, Time.deltaTime);
+
+            //Deactivate info panel
+            infoPanel.gameObject.SetActive(false);
         }
         if (col.gameObject.tag == "Grower")
         {
