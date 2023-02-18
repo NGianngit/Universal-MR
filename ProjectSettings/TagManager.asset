@@ -7,6 +7,7 @@ TagManager:
   - HoverRay
   - wall
   - ship
+  - Grower
   layers:
   - Default
   - TransparentFX

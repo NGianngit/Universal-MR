@@ -32,6 +32,13 @@ public class RotationPivot1 : MonoBehaviour
     public HoverSpace hoverScript;
     public Vector3 HoverPosition;
 
+    //Scale to fit glass box. *Every planet will have the same number.*
+    public Vector3 scaleResize;
+    //Orginal Scale.
+    public Vector3 scaleNum;
+    private Vector3 savedScaleNum;
+    private bool isGrowing;
+
     void Start()
     {
         //Create boundsControl for gameobject.
@@ -44,6 +51,11 @@ public class RotationPivot1 : MonoBehaviour
         //Bool to allow Solar System Rotation.
         rotationOn = true;
 
+        //Saved Orginial Scale.
+        scaleNum = this.transform.localScale;
+        savedScaleNum = scaleNum;
+        //Set growing to false.
+        isGrowing = false;
     }
     // Update is called once per frame
     void Update()
@@ -62,6 +74,9 @@ public class RotationPivot1 : MonoBehaviour
             //Check Hover positions.
             HoverPosition = hoverScript.Hoverpos;
 
+
+            scaleNum = this.transform.localScale;
+
             if (isPress == true)
             {
                 //elapsedTime += Time.deltaTime;
@@ -72,6 +87,17 @@ public class RotationPivot1 : MonoBehaviour
             if (isHover == true)
             {
                 transform.position = Vector3.Lerp(startPosition, HoverPosition, Time.deltaTime);
+            }
+
+            if (isGrowing == true)
+            {
+                Debug.Log("Going Big");
+                transform.localScale = Vector3.Lerp(scaleNum, scaleResize, 10 * Time.deltaTime);
+            }
+            if (isGrowing == false && scaleNum != savedScaleNum)
+            {
+                Debug.Log("Going Small");
+                transform.localScale = Vector3.Lerp(scaleNum, savedScaleNum, 10 * Time.deltaTime);
             }
         }
     }
@@ -86,6 +112,11 @@ public class RotationPivot1 : MonoBehaviour
             returnSpeed = 0;
 
             isHover = true;
+
+        }
+        if (col.gameObject.tag == "Grower")
+        {
+            isGrowing = true;
         }
     }
     void OnTriggerExit(Collider col)
@@ -100,6 +131,12 @@ public class RotationPivot1 : MonoBehaviour
 
             //Cancel out Hover Function.
             isHover = false;
+            Debug.Log("Going Small");
+            transform.localScale = Vector3.Lerp(scaleResize, scaleNum, Time.deltaTime);
+        }
+        if (col.gameObject.tag == "Grower")
+        {
+            isGrowing = false;
         }
     }
     public void OnPress()
