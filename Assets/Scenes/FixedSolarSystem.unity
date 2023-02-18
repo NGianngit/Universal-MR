@@ -848,7 +848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 135909bef9a4f134b8a84fa577c2c359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 0
+  rotationSpeed: 100
 --- !u!114 &519643255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1720,7 +1720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 135909bef9a4f134b8a84fa577c2c359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 0
+  rotationSpeed: 5
 --- !u!114 &971968184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65705,7 +65705,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1583851894
 Transform:
   m_ObjectHideFlags: 0
@@ -66141,7 +66141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 135909bef9a4f134b8a84fa577c2c359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 0
+  rotationSpeed: 9
 --- !u!114 &1659895253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66590,7 +66590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 135909bef9a4f134b8a84fa577c2c359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 0
+  rotationSpeed: 200
 --- !u!114 &1666938062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67169,7 +67169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 135909bef9a4f134b8a84fa577c2c359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 0
+  rotationSpeed: 190
 --- !u!114 &1896665984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67930,7 +67930,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!135 &1970349614
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -68022,7 +68022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 135909bef9a4f134b8a84fa577c2c359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 0
+  rotationSpeed: 290
 --- !u!114 &1970349619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68946,7 +68946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 135909bef9a4f134b8a84fa577c2c359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 0
+  rotationSpeed: 150
 --- !u!114 &4421581094026940746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69556,7 +69556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 135909bef9a4f134b8a84fa577c2c359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 0
+  rotationSpeed: 90
 --- !u!114 &7927189447672050652
 MonoBehaviour:
   m_ObjectHideFlags: 0
