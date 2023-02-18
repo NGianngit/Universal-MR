@@ -141,6 +141,7 @@ public class QuizManager : MonoBehaviour
 
     public void AddQuizScore()
     {
+        // Updates the quiz score if it is higher than the current highest score for that quiz
         if (whichQuiz == 1)
         {
             if (score > quizScoreManager.mercuryScore)

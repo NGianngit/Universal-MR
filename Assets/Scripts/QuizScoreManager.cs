@@ -41,7 +41,7 @@ public class QuizScoreManager : MonoBehaviour
     void Update()
     {
         TotalScore = MercuryScore + VenusScore + EarthScore + MarsScore + JupiterScore + SaturnScore + UranusScore + NeptuneScore + SolarSystemScore;
-        Debug.Log(TotalScore);
+        //Debug.Log(TotalScore);
         mercuryScore = MercuryScore;
         venusScore = VenusScore;
         earthScore = EarthScore;
@@ -51,8 +51,10 @@ public class QuizScoreManager : MonoBehaviour
         uranusScore = UranusScore;
         neptuneScore = NeptuneScore;
         solarSystemScore = SolarSystemScore;
+        totalScoreShow.text = TotalScore.ToString();
     }
 
+    //change quiz score to planet score
     public void AddMercuryScore()
     {
         MercuryScore = Quizscore;
@@ -98,6 +100,7 @@ public class QuizScoreManager : MonoBehaviour
         SolarSystemScore = Quizscore;
         Debug.Log(SolarSystemScore);
     }
+
 
     public void ShowTotalScore()
     {

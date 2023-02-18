@@ -9,6 +9,7 @@ public class Astroids : MonoBehaviour
     public RandomSpawner spawner;
     public TextMeshProUGUI timer;
     public TextMeshProUGUI asteroidCount;
+    public GameObject menu;
     
 
     private float startTime = 0;
@@ -60,6 +61,7 @@ public class Astroids : MonoBehaviour
         timer.color = Color.red;
         asteroidPoints = 0;
         spawner.StopSpawn();
+        menu.SetActive(true);
     }
 
     public void AsteroidDodged()
