@@ -58,6 +58,7 @@ public class RandomSpawner : MonoBehaviour
             yield return new WaitForSeconds(spawnTime);
 
             SpawnAsteroids();
+            SpawnAsteroids();
         }
     }
 
